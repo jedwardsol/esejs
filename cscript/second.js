@@ -18,5 +18,5 @@ WScript.echo("answer = ", answer)
 for(var i=0;i<10;i++)
 {
     var square = i*i;
-    WScript.echo(' ${i} * ${i} = ${square}');
+    WScript.echo(i , "*", i, "=", square);
 }
