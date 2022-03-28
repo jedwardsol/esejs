@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Interactive script</title>
+
+<script>
+
+function highlight() {
+    document.getElementById("section1").style.background = `green`;
+}
+
+function makeNormal() {
+    document.getElementById("section1").style.background = `white`;
+}
+
+</script>
+
+
+</head>
+
+<body  >
+<div id="section1"  onMouseEnter="highlight()"  onMouseLeave="makeNormal()" >  Hello! </div>
+</body>
+
+</html>
+

@@ -74,7 +74,138 @@ For interacting with javascript,  we need to give the script a way to identify a
 
 
 
+### Head - style
+
+The HTML tags describe what the text is.   `<q>This is a quotation</q>`.   How the browser displays a quotation depends on the stylesheet.   The style sheet goes in the head of the document.   It can either be a link to a different file,  or be written out in full.
+
+Written out in full,  it looks like this :-
+
+
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+    <title>Some styles</title>
+
+    <style>
+
+    b {
+    color : red;
+    }
+
+    q {
+     background-color: lightblue;
+    }
+
+
+    #section1 {
+    color : blue;
+    }
+
+    .green {
+    color : green;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+    <p><h1>This is a big heading</h1></p>
+    <p>This is a paragraph </b></p>
+    <p class="green">This is a green paragraph </b></p>
+    <p class="green">This is a another green paragraph </b></p>
+    <p class="green">This is a third green paragraph </b></p>
+    <p>This is a paragraph with some <b>bold</b> text in it.</p>
+    <p>This is a paragraph with some <i>italic</i> text in it.</p>
+    <div id="section1">This is a section. It is like a paragraph.  It has a <q>quotation</q> in it.</div>
+    </body>
+
+    </html>
+
+
+The stylesheet goes inside a `<style>` element.   It has its own language.   Before the `{`  is the name of the thing that the style applies to.   This can be a tag,  a class,  or a specific element.
+
+
+### Head script
+
+
+Simple example
+
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+    <title>Simple script</title>
+
+    <script>
+
+    function pageLoaded() {
+        document.getElementById("section1").innerHTML = "This was written by the script";
+    }
+
+    </script>
+
+
+    </head>
+
+    <body onload="pageLoaded()"  >
+    <div id="section1"></div>
+    </body>
+
+    </html>
+
+
+There's a lot going on here.
+
+1:  There needs to be something that tells the script when to run.  There are lots of different events available.  Here 
+
+    <body onload="pageLoaded()"  >
+
+we've said that when the body has finished loaded then the function `pageLoaded` should be executed.
+
+2:  The script itself sits inside a `<script>` element in the head of the document.  This script consists of a single function.
+
+
+3:  The browser makes available an object called `document` which gives access to the page.
+
+The `getElementById` method lets us get access to the `div` that we assigned an id to.
+
+And then each element has a property called `innerHTML`.
+
+    <div id="section1"> This area is where the innerHTML is </div>
 
 
 
+A more interactive example that ties together HTML and styles and javascript
+
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+    <title>Interactive script</title>
+
+    <script>
+
+    function highlight() {
+        document.getElementById("section1").style.background = `green`;
+    }
+
+    function makeNormal() {
+        document.getElementById("section1").style.background = `white`;
+    }
+
+    </script>
+
+
+    </head>
+
+    <body  >
+    <div id="section1"  onMouseEnter="highlight()"  onMouseLeave="makeNormal()" >  Hello! </div>
+    </body>
+
+    </html>
+
+
+Here we told the div to run one function when the mouse "enters" the element and another when the mouse leaves it.
 
