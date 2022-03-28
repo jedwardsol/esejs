@@ -8,7 +8,7 @@ A web browser doesn't run javascript directly.  Instead you will need to create 
 A web page is written in HTML.  This has a specific structure.  
 
 
-Use notepad to create a file  `basic.html`  and in it put
+Use `notepad` or `code` to create a file  `basic.html`  and in it put
 
 
     <!DOCTYPE HTML>
