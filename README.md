@@ -35,6 +35,19 @@ Windows has a basic javascript environment built it.
 
 
 
-#1b Chromebook?
+# 1b Chromebook?
 
 TODO : does it have anything similar.
+
+
+
+# 2 Web browser
+
+Web browsers can run javascript
+
+[Browser notes](chrome/README.md)
+
+
+# 3 Node.js
+
+TODO
