@@ -209,3 +209,50 @@ A more interactive example that ties together HTML and styles and javascript
 
 Here we told the div to run one function when the mouse "enters" the element and another when the mouse leaves it.
 
+### drawing
+
+    <!DOCTYPE HTML>
+    <html>
+
+    <head>
+    <title>Drawing</title>
+
+    <script>
+
+    function go() 
+    {
+        var canvas = document.getElementById("theCanvas");
+        var draw   = canvas.getContext("2d");
+
+        draw.moveTo(0, 0);
+        draw.lineTo(200, 200);
+        draw.stroke();
+
+        draw.beginPath();
+        draw.arc(200, 200, 40, 0, 2 * Math.PI);
+        draw.stroke();
+    }
+
+    </script>
+
+
+    </head>
+
+    <body  >
+
+    <canvas id="theCanvas" width="300" height="300"></canvas>
+
+    <p><button  onClick="go()">Press me </button></p>
+
+    </body>
+
+    </html>
+
+
+To do some drawing,  we first make a canvas and give it an id so that the script can reference it.
+
+Here,  there's also a button which,  when pressed,  will trigger the script.
+
+The script gets access to the canvas and then draws a line and a circle.
+
+More info at : https://www.w3schools.com/graphics/canvas_intro.asp
