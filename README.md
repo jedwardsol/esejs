@@ -2,13 +2,13 @@
 
 
 
-This describes 3 ways of running Javascript programs.
+This describes a couple of ways of running Javascript programs.
 
 
 # 0 managing and editing files
 
 
-## Windows
+## Windows 
 
 Press Windows-R  to get the "Run" dialog.
 
@@ -24,20 +24,20 @@ TODO
 
 
 
-# 1a  Windows cscript
+# 1a  Windows : cscript
 
 
-Windows has a basic javascript environment built it.
+Windows has a basic javascript environment built it.   
 
 
 [CScript notes](cscript/README.md)
 
 
 
+# 1b Cross platform : node.js
 
-# 1b Chromebook?
+node.js is a standalone host for javascript.
 
-TODO : does it have anything similar.
 
 
 
@@ -48,6 +48,3 @@ Web browsers can run javascript
 [Browser notes](chrome/README.md)
 
 
-# 3 Node.js
-
-TODO
