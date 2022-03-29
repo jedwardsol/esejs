@@ -8,7 +8,7 @@ A web browser doesn't run javascript directly.  Instead you will need to create 
 A web page is written in HTML.  This has a specific structure.  
 
 
-Use notepad to create a file  `basic.html`  and in it put
+Use `notepad` or `code` to create a file  `basic.html`  and in it put
 
 
     <!DOCTYPE HTML>
@@ -26,7 +26,11 @@ Use notepad to create a file  `basic.html`  and in it put
 
 
 
-Then in chrome,   enter the path to the file in the address bar.  The window will display the text "Hello!"
+Then in the cmd window  type
+
+    start basic.html
+
+This will start chrome,  open the html file in a new window,  and the window will display the text "Hello!"
 
 
 HTML is defined by "tags" which are the bits surrounded by angle brackets.   Each tag appears in pairs the start `<tag>` and the end `</tag>`

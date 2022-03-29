@@ -3,9 +3,13 @@
 
 ## 1st steps
 
-In the command window type  `notepad first.js`
+In the command window type  `notepad first.js`.  Notepad will ask if you want to create a new file.  Press yes.
 
-Notepad will ask if you want to create a new file.  Press yes.
+OR
+
+In the command window type  `code first.js`.  Visual Studio code won't ask about creating a new file
+
+
 
 You now have a blank window in which you can write your program.
 

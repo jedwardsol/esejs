@@ -17,10 +17,13 @@ Type  `cmd`  and press OK.  This will give you a command window where you will b
 TODO : directories and organisation
 
 
+notepad is a builtin, but very basic, editor.    The computer upstairs has a better editor installed - it's called `code`.
+
+
 
 ## Chromebook
 
-TODO
+TODO.  
 
 
 
